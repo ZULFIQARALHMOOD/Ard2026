@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- styles.xml references these three but no colors.xml shipped with them in the upstream
+         Capacitor template — without this file, `./gradlew assembleDebug` fails with
+         "resource color/colorPrimary not found". Replace with WordCraft's own brand colours
+         whenever you have them; these are safe, neutral placeholders. -->
+    <color name="colorPrimary">#2b47b5</color>
+    <color name="colorPrimaryDark">#1d3380</color>
+    <color name="colorAccent">#3b5bdb</color>
+</resources>

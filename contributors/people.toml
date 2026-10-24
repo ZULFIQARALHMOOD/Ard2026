@@ -1,0 +1,22 @@
+# Contributor display names for the About window.
+#
+# How this works: contributors/contributors.json (generate it with contributors_gen.py in this
+# same folder, from this repo's real `git log`) lists every real contributor by login with their
+# commit stats. This file only supplies the *display name* on top of that — it never invents a
+# contributor. Add your own entry below, in your own commit:
+#
+#   [people.your-login]
+#   real_name = "Your Name"        # shown when the viewer picks "Real name" in the About window
+#   display_name = "Nickname"      # shown when the viewer picks "Display name"
+#   sync_github_name = false
+#
+# `your-login` must exactly match the "login" field contributors_gen.py wrote for you in
+# contributors.json (by default, your git `user.name`). After adding your entry here, also flip
+# that person's "people_entry" to true in contributors.json — build.rs only shows a name when
+# both files agree.
+#
+# Example (replace or delete):
+#
+# [people.Jane Example]
+# real_name = "Jane Example"
+# display_name = "Jane"
